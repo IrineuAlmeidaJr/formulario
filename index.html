@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/estilos/geral.css">
+    <link rel="stylesheet" href="/estilos/cabecalho.css">
+    <link rel="stylesheet" href="/estilos/formulario.css">
+    <link rel="stylesheet" href="/estilos/resposividade.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header>        
+        <nav>
+            <h1 class="box-logo">
+                <img src="/imagens/logo.png" alt="Logo Empresa">
+            </h1>    
+            <div class="box-titulo">
+                <h1 class="titulo">TITULO</h1>
+                <div class="sub-titulo">
+                  <a href="/">subTituloLink.com</a>
+                  <button class="botao-seguir">+ Seguir</button> 
+                </div>
+            </div>
+            <button title="Amo" class="botao-amei">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                </svg>
+            </button>
+            <a href="/" class="botao-editor">Ver Editor</a>
+            <a href="/" class="botao-cadastrar">Inscrever-se</a>
+            <a href="/" class="botao-login">Log In</a>
+            
+            <div class="menu-toggle">                
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                </svg>
+                <!-- Inserir Toogle Aqui -->
+            </div>
+            
+        </nav>  
+    </header>
+    
+    <div class="cadastro">
+        <h2>Pesquisa de Usuário</h2>
+        <h3>Obrigado por nos ajudar a melhorar a plataforma</h3>
+        <form action="POST" class="campos-cadastro">
+            <div class="box-nome">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite o seu nome">
+            </div>
+
+            <div class="box-email">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Digite o seu email">
+            </div>
+
+            <div class="box-idade">
+                <label for="idade">Idade <p>(opcional)</p></label>
+                <input type="number" name="idade" id="idade" placeholder="Informe sua idade">
+            </div>
+
+            <div class="box-ocupacao">
+                <label for="ocupacao">Qual opção descreve melhor sua função atual?</label>
+                <select name="ocupacao" id="ocupacao">
+                    <option class="test" value="" selected disabled>Selecione</option>
+                    <option value="estudante">Estudante</option>
+                    <option value="trabalha">Trabalha</option>
+                    <option value="outros">Outros</option>
+                </select>
+            </div>
+
+            <div class="box-recomendacao">
+                <p>Você recomendaria freeCodeCamp a um amigo?</p>
+                <label for="opcao1"><input type="radio" name="recomendacao" id="opcao1" value="sim">Sim</label>
+                <label for="opcao2"><input type="radio" name="recomendacao" id="opcao1" value="talvez">Talvez</label>
+                <label for="opcao3"><input type="radio" name="recomendacao" id="opcao1" value="nao">Não</label>
+                <label for=""></label>
+            </div>
+
+            <div class="box-favorito">
+                <label for="favorito">Qual é o seu recurso favorito do freeCodeCamp?</label>
+                <select name="favorito" id="favorito">     
+                    <option value="" selected disabled>Selecione</option>               
+                    <option value="desafios">Desafios</option>
+                    <option value="comunidade">Comunidade</option>
+                    <option value="gratuito">Ser Gratuito</option>                    
+                </select>    
+            </div>
+
+            <div class="box-melhora">
+                <p>Oque você gostaria de ver melhorado?</p>
+                <label for="front-end"><input type="checkbox" name="front-end" id="front-end">Projetos Front-end</label>
+                <label for="back-end"><input type="checkbox" name="back-end" id="back-end">Projetos Back-end</label>
+                <label for="desafios"><input type="checkbox" name="desafios" id="desafios">Dexafios</label>
+                <label for="videos"><input type="checkbox" name="videos" id="videos">Vídeos</label>
+                <label for="wiki"><input type="checkbox" name="wiki" id="wiki">Wiki</label>
+                <label for="forum"><input type="checkbox" name="forum" id="forum">Forum</label>
+                <label for="cursos"><input type="checkbox" name="cursos" id="cursos">Mais cursos</label>                  
+            </div>
+
+            <div class="box-sugestao">
+                <label for="sugestao">Algum comentário ou sugestão?</label>   
+                <textarea name="comentario-sugestao" id="comentario-sugestao" cols="46" rows="5" placeholder="Digite algum comentário ou sugestão aqui..."></textarea>    
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script src="/script/script.js"></script>
+
+</body>
+</html>

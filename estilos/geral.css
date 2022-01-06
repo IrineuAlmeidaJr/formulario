@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: fixed;
+    background-image: url("/imagens/fundoBlur.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* 
+        background: url("/imagens/fundoBlur.jpg") no-repeat center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; 
+    */    
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/* Abaixo remove o elemento que permite trocar a 
+quantidade do número que está inserido no input
+Funciona apenas no Chome*/
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}

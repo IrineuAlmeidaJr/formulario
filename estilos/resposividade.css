@@ -1,0 +1,43 @@
+
+@media (max-width:800px) {
+    .campos-cadastro {    
+        width: 600px;
+    }
+}
+
+@media (max-width:720px) {
+    .botao-seguir {
+        display: none; 
+    }
+
+    .campos-cadastro {    
+        width: 500px;
+    }
+}
+
+@media (max-width:630px) {
+    .menu-toggle {        
+        background-color: #444857;
+        border-radius: 10px;
+        display: block;
+        padding: 10px 16px;
+        margin: 0 10px 0 15px;
+        color: white;
+    }
+    
+    .botao-editor {
+        display: none;
+    }
+
+    .botao-cadastrar {
+        display: none;
+    }
+
+    .botao-login {
+        display: none;
+    }
+    
+    .campos-cadastro {    
+        width: 380px;
+    }
+}
